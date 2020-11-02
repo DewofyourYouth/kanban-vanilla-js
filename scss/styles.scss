@@ -27,8 +27,13 @@ header {
   justify-content: center;
   align-content: stretch;
   flex-basis: fill;
-  padding: 0 50px;
+  padding: 0;
   font-family: sans-serif;
+  div {
+    flex-grow: 1;
+    background-color: $red;
+    border: solid 3px #30303a;
+  }
   input {
     font-size: 1.5rem;
     padding: 20px 10px;
@@ -80,31 +85,29 @@ h1 {
 .container {
   display: flex;
   flex-direction: row;
-}
+  .col {
+    border: solid 5px $black;
+    min-width: 300px;
+    min-height: 500px;
+    flex-grow: 1;
+    background-color: $gray;
+    text-align: center;
+    h3 {
+      font-size: 1.6rem;
+      border-bottom: 6px solid rgb(36, 35, 35);
+      padding: 10px;
+      padding-top: 0;
+      font-family: $title;
+    }
+  }
 
-#todo > .card {
-  background-color: lightgoldenrodyellow;
-}
-#doing > .card {
-  background-color: lightgreen;
-}
-#done > .card {
-  background-color: lightblue;
-}
-
-.col {
-  border: solid 5px $black;
-  min-width: 300px;
-  min-height: 500px;
-  margin: 30px;
-  flex-grow: 1;
-  background-color: $gray;
-  text-align: center;
-  h3 {
-    font-size: 1.6rem;
-    border-bottom: 6px solid rgb(36, 35, 35);
-    padding: 10px;
-    padding-top: 0;
-    font-family: $title;
+  #todo > .card {
+    background-color: lightgoldenrodyellow;
+  }
+  #doing > .card {
+    background-color: lightgreen;
+  }
+  #done > .card {
+    background-color: lightblue;
   }
 }

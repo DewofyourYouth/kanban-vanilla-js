@@ -10,8 +10,10 @@
     <header>
       <h1>Kanban Board <span>(Vanilla JS)</span></h1>
       <div id="controller">
+        <div></div>
         <input type="text" id="card-input" placeholder="Add a task here" />
         <button id="addcard" class="primary">Add Card</button>
+        <div></div>
       </div>
     </header>
     <div class="container">
@@ -23,7 +25,7 @@
       >
         <h3>To Do:</h3>
       </div>
-      <di
+      <div
         id="doing"
         class="col dropzone"
         ondrop="onDrop(event)"
