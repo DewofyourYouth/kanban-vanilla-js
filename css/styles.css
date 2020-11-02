@@ -18,7 +18,7 @@ header {
   #controller div {
     flex-grow: 1;
     background-color: #ff0101;
-    border: solid 3px #30303a; }
+    border: solid 7px #30303a; }
   #controller input {
     font-size: 1.5rem;
     padding: 20px 10px;
@@ -59,7 +59,8 @@ h1 {
   font-size: 1.2rem;
   text-transform: uppercase;
   border-top: 3px solid #30303a;
-  border-bottom: 3px solid #30303a; }
+  border-bottom: 3px solid #30303a;
+  word-wrap: normal; }
 
 .container {
   display: flex;

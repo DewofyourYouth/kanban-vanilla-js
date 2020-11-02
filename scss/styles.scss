@@ -32,7 +32,7 @@ header {
   div {
     flex-grow: 1;
     background-color: $red;
-    border: solid 3px #30303a;
+    border: solid 7px $black;
   }
   input {
     font-size: 1.5rem;
@@ -81,6 +81,7 @@ h1 {
   text-transform: uppercase;
   border-top: 3px solid $black;
   border-bottom: 3px solid $black;
+  word-wrap: normal;
 }
 .container {
   display: flex;
